@@ -1,0 +1,22 @@
+<mxfile host="65bd71144e">
+    <diagram id="qSKOIxHwq7VHR10hPjdS" name="Page-1">
+        <mxGraphModel dx="990" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Sign-in screen&lt;br&gt;&lt;br&gt;email input&lt;br&gt;&lt;br&gt;password input&lt;br&gt;&lt;br&gt;submit btn" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="40" width="120" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Sign-up screen&lt;br&gt;&lt;br&gt;email input&lt;br&gt;&lt;br&gt;password input&lt;br&gt;&lt;br&gt;confirm pswd input&lt;br&gt;&lt;br&gt;submit btn&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="120" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Main screen&lt;br&gt;&lt;br&gt;Notification icon for forms to be completed&lt;br&gt;&lt;br&gt;see forms now dropdown from clicking notification icon&lt;br&gt;&lt;br&gt;list of previously completed forms&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="40" width="120" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="40" width="120" height="240" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
