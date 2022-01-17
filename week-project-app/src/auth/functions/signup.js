@@ -1,15 +1,18 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import { post } from "../../lib/http_functions/post";
 
-export async function signUp({ email, password }) {
+export async function _signUp() {
+   const email = "123@12111.com";
+   const password = "testTOOMe12221";
+
    try {
       await firebase.auth().createUserWithEmailAndPassword(email, password);
 
       firebase.auth().onIdTokenChanged(async (user) => {
          const token = await user?.getIdToken();
-         console.log(token);
-         //  await post("/api/signin", { token });
+         await post("/api/signin", { token });
 
          //  window.location.href = "/";
       });

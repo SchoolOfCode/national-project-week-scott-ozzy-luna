@@ -4,21 +4,24 @@ import styles from "../styles/Home.module.css";
 import { useAuthContent } from "../auth/auth.context";
 import { firebaseAdmin } from "../lib/firebase/firebasde.admin";
 
-function Home() {
+function Dashboard() {
    const { _signIn } = useAuthContent();
-   // _signIn();
-   return <div>HOME</div>;
+   //    _signIn();
+   return <div>dashboard</div>;
 }
 
 export async function getServerSideProps({ req, res }) {
    const unauthorizedReturn = {
-      props: {
-         access: false,
+      redirect: {
+         destination: "/",
       },
    };
 
    try {
-      const uid = await firebaseAdmin.auth().verifyIdToken(req.cookies.token);
+      const { uid } = await firebaseAdmin
+         .auth()
+         .verifyIdToken(req.cookies.token);
+
       console.log(uid);
 
       if (!uid) {
@@ -35,4 +38,4 @@ export async function getServerSideProps({ req, res }) {
    }
 }
 
-export default Home;
+export default Dashboard;
