@@ -18,9 +18,7 @@ export async function getServerSideProps({ req, res }) {
    };
 
    try {
-      const { uid } = await firebaseAdmin
-         .auth()
-         .verifyIdToken(req.cookies.token);
+      const uid = await firebaseAdmin.auth().verifyIdToken(req.cookies.token);
 
       console.log(uid);
 

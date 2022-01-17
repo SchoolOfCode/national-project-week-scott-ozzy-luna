@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-   apiKey: "AIzaSyDnwRRNrLoSwagLr1Wj1Lit1jVpCrlo9Tg",
-   authDomain: "school-of-code.firebaseapp.com",
-   projectId: "school-of-code",
-   storageBucket: "school-of-code.appspot.com",
-   messagingSenderId: "837317304128",
-   appId: "1:837317304128:web:268d668f6118f3f90964a5",
+   apiKey: process.env.NEXT_LOCAL_API_KEY,
+   authDomain: process.env.NEXT_LOCAL_AUTH_DOMAIN,
+   projectId: process.env.NEXT_LOCAL_PROJECT_ID,
+   storageBucket: process.env.NEXT_LOCAL_STORAGE_BUCKET,
+   messagingSenderId: process.env.NEXT_LOCAL_MESSAGING_SENDER_ID,
+   appId: process.env.NEXT_LOCAL_APP_ID,
 };
 
 export const initializeFirebase = firebase.initializeApp(firebaseConfig);
