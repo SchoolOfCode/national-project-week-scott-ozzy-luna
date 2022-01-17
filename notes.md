@@ -1,3 +1,5 @@
+
+
 # Project week
 
 ## Links
@@ -11,3 +13,43 @@ Our task was to create a full stack application that will improve the life of th
 #### The process
 
 After settling on our aim, we proceeded to design our app - sketching out the various screens with Figma, designing from a mobile first perspective.
+
+
+#### Tech stack
+Next.js - server side rendering, will help secure data, easier routing options.
+Authentication - firebase - ease of use, encryption, a good standard and popular solution for authentication.
+OAuth - handled by firebase.
+Hosting on Vercil - tight integration with next.js, and handles ssr well.
+Postgres DB on Heroku - as previously covered on course.
+React for front end.
+
+# Components
+
+-Homepage - signup
+    -Logo
+    -Text
+    -Input
+    -Button
+
+-Login page
+    -Logo
+    -Text
+    -Input
+    -Button
+
+-Dashboard
+    -Icon/counter notification
+    -List of forms
+        -Completed
+        -Not completed
+        
+        -List Item
+            -Text 
+                -Form name
+                -Date
+            -isCompleted icon/style
+
+-Form page
+    -Inputs
+    -Button
+    
